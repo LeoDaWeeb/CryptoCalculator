@@ -34,7 +34,7 @@
     --cyan-font: rgb(0, 255, 255);
 
     /* Current color theme */
-    --color-theme: var(--purple-color);
-    --color-lighter: var(--purple-lighter);
-    --font-color: var(--purple-font)
+    --color-theme: var(--green-color);
+    --color-lighter: var(--green-lighter);
+    --font-color: var(--green-font)
 }
