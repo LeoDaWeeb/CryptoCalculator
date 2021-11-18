@@ -1,0 +1,55 @@
+#navbar {
+    background-color: var(--element-bg-color) !important;
+    padding-top: 10px;
+    padding-bottom: 15px;
+}
+
+#navbar-title {
+    color: var(--color-lighter) !important;
+    -webkit-text-stroke: 0.7px var(--color-theme);
+    text-shadow: 0.2px 0px 20px var(--color-theme);
+    font-size: 25px;
+}
+
+.nav-link {
+    color: var(--font-color) !important;
+    border-radius: 100px;
+    transition: 500ms;
+}
+
+.nav-link:hover {
+    color: var(--color-lighter) !important;
+    text-shadow: 1px 0px 25px var(--color-theme);
+    -webkit-text-stroke: 0.2px var(--color-theme);
+}
+
+#navbar-collapse-btn {
+    border-color: var(--color-theme) !important;
+    background-color:  var(--bg-color) !important;
+    outline: none !important;
+}
+
+#colortube {
+    --colortube-bg: rgb(54, 54, 54);
+    height: 5px;
+    background-color: var(--colortube-bg);
+    overflow-x: hidden;
+}
+
+@keyframes colortravel {
+    0% {
+        left: -110%;
+    }
+    100% {
+        left: 100%;
+    }
+}
+
+#color-travel {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    left: -110%;
+    background-image: linear-gradient(to right, var(--colortube-bg) 0%, var(--color-theme) 70%, var(--color-theme) 100%);
+    animation: colortravel 10s infinite ease-in;
+}

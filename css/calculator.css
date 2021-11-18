@@ -1,0 +1,71 @@
+.input-label {
+    color: var(--font-color);
+}
+
+.calc-input {
+    --input-color: rgb(43, 43, 43);
+    --input-border-color: rgb(109, 109, 109);
+    --input-font-color: rgb(175, 175, 175);
+    width: 70%;
+    background-color: var(--input-color);
+    border-color: var(--input-border-color);
+    outline: none;
+    color: var(--input-font-color);
+}
+
+.calc-input:focus {
+    background-color: var(--input-color);
+    border-color: var(--color-lighter);
+    outline: none !important;
+    box-shadow: none;
+    color: var(--input-font-color);
+    box-shadow: 0px 0px 5px 1px var(--color-theme);
+}
+
+@keyframes btn-animation {
+    0% {
+        border-color: var(--btn-border-color);
+        box-shadow: none;
+    }
+    50% {
+        border-color: var(--color-lighter);
+        box-shadow: 0px 0px 15px 2px var(--color-theme);
+        color: var(--color-lighter);
+        -webkit-text-stroke: 0.1px var(--font-color);
+    }
+    100% {
+        border-color: var(--btn-border-color);
+        box-shadow: none;
+    }
+}
+
+#calc-btn {
+    --btn-color: rgb(43, 43, 43);
+    --btn-border-color: rgb(95, 95, 95);
+    --btn-font-color: rgb(175, 175, 175);
+    width: 250px;
+    height: 50px;
+    background-color: var(--btn-color);
+    border: 3px solid var(--btn-border-color);
+    border-radius: 10px;
+    box-shadow: 0px 0px;
+    outline: none;
+    font-size: 25px;
+    font-weight: bold;
+    color: var(--btn-font-color);
+    /*animation: btn-animation 5s infinite;*/
+    transition: 500ms;
+}
+
+#calc-btn:hover {
+    border-color: var(--color-lighter);
+    box-shadow: 0px 0px 15px 2px var(--color-theme);
+    color: var(--color-lighter);
+    -webkit-text-stroke: 0.1px var(--font-color);
+}
+
+#calc-btn:active {
+    --click-bg-color: rgb(156, 156, 156);
+    background-color: var(--click-bg-color);
+    transition: 0s;
+}

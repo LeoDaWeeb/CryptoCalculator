@@ -1,0 +1,40 @@
+:root {
+    /* Page background colors */
+    --bg-color: rgb(29, 29, 29);
+    --element-bg-color: rgb(22, 22, 22);
+
+    /* Blue color theme */
+    --blue-color: rgb(0, 47, 255);
+    --blue-lighter: rgb(185, 185, 255);
+    --blue-font: rgb(0, 47, 255);
+
+    /* Red color theme */
+    --red-color: rgb(255, 0, 0);
+    --red-lighter: rgb(255, 180, 180);
+    --red-font: rgb(255, 0, 0);
+
+    /* Green color theme */
+    --green-color: rgb(0, 255, 0);
+    --green-lighter: rgb(180, 255, 180);
+    --green-font: rgb(0, 255, 0);
+
+    /* Orange color theme */
+    --orange-color: rgb(255, 153, 0);
+    --orange-lighter: rgb(255, 211, 180);
+    --orange-font: rgb(255, 153, 0);
+
+    /* Purple color theme */
+    --purple-color: rgb(255, 0, 255);
+    --purple-lighter: rgb(255, 180, 255);
+    --purple-font: rgb(255, 0, 255);
+
+    /* Cyan color theme */
+    --cyan-color: rgb(0, 255, 255);
+    --cyan-lighter: rgb(180, 255, 255);
+    --cyan-font: rgb(0, 255, 255);
+
+    /* Current color theme */
+    --color-theme: var(--purple-color);
+    --color-lighter: var(--purple-lighter);
+    --font-color: var(--purple-font)
+}

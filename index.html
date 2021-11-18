@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cryptocalculator</title>
+    <!-- BOOTSTRAP -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- ICON LIBRARY -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- CSS STYLESHEETS -->
+    <link rel="stylesheet" href="css/font.css">
+    <link rel="stylesheet" href="css/colors.css">
+    <link rel="stylesheet" href="css/background.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/contentdiv.css">
+    <link rel="stylesheet" href="css/calculator.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" id="navbar">
+        <a class="navbar-brand" href="#" id="navbar-title"><b>CryptoCalculator</b></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            id="navbar-collapse-btn">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="fa fa-calculator"></i><span> Calculator</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="fa fa-balance-scale"></i></i><span> Compare</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="fa fa-wrench"></i><span> Convert</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="fa fa-bitcoin"></i><span> Crypto</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="fa fa-cog"></i><span> Settings</span></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div id="colortube" class="container-fluid">
+        <div id="color-travel"></div>
+    </div>
+    <br>
+    <div class="container" align="center">
+        <h2 id="subpage-title"><i class="fa fa-calculator"></i><span> Calculator</span></h2>
+    </div>
+    <br>
+    <div class="container content-div">
+        <br>
+        <br>
+        <div class="row">
+            <div class="col-sm-6" align="center">
+                <div class="form-group">
+                    <label for="gpuprice" class="input-label">GPU Price (€)</label>
+                    <input type="text" class="form-control calc-input" name="gpuprice" placeholder="Enter GPU Price" autocomplete="off">
+                </div>
+            </div>
+            <br>
+            <div class="col-sm-6" align="center">
+                <div class="form-group">
+                    <label for="hashrate" class="input-label">Hashrate (MH/s)</label>
+                    <input type="text" class="form-control calc-input" name="hashrate" placeholder="Enter Hashrate" autocomplete="off">
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-sm-6" align="center">
+                <div class="form-group">
+                    <label for="power" class="input-label">Power Consumption (W)</label>
+                    <input type="text" class="form-control calc-input" name="power" placeholder="Enter Power Consumption" autocomplete="off">
+                </div>
+            </div>
+            <br>
+            <div class="col-sm-6" align="center">
+                <div class="form-group">
+                    <label for="elcost" class="input-label">Electrical Cost (€/kWh)</label>
+                    <input type="text" class="form-control calc-input" name="elcost" placeholder="Enter Electrical Cost" autocomplete="off">
+                </div>
+            </div>
+        </div>
+        <br><br><br>
+        <div class="container" align="center">
+            <button id="calc-btn">Calculate</button>
+        </div>
+        <br><br>
+    </div>
+    <br><br>
+</body>
+
+</html>
