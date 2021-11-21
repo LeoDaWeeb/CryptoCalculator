@@ -1,0 +1,73 @@
+#result-table {
+    display: none;
+}
+
+#results-label {
+    color: var(--color-lighter);
+    -webkit-text-stroke: 0.3px var(--color-theme);
+    text-shadow: 0px 0px 20px var(--color-theme);
+}
+
+#results-line {
+    background-color: var(--color-lighter);
+    box-shadow: 0px 0px 5px 2px var(--color-theme);
+}
+
+#table {
+    --input-font-color: rgb(151, 151, 151);
+    color: var(--input-font-color);
+}
+
+.table-row {
+    --row-padding: 3px;
+    --table-border-color: rgb(66, 66, 66);
+    border: 1px solid var(--table-border-color);
+    padding-top: var(--row-padding);
+    padding-bottom: var(--row-padding);
+}
+
+#header-row {
+    border: none;
+    border-bottom: 1px solid var(--table-border-color);
+    padding-top: 0;
+    padding-bottom: 0;
+    color: var(--font-color);
+}
+
+.label-col {
+    color: var(--font-color);
+}
+
+#income-label-col {
+    border: 1px solid var(--table-border-color);
+    border-bottom: none;
+    border-right: none;
+}
+
+#elcost-label-col {
+    border: 1px solid var(--table-border-color);
+    border-bottom: none;
+    border-right: none;
+}
+
+#profit-label-col {
+    border: 1px solid var(--table-border-color);
+    border-bottom: none;
+}
+
+#perday-row, #perweek-row, #permonth-row, #peryear-row {
+    border-top: none;
+}
+
+.value-col {
+    border-left: 1px solid var(--table-border-color);
+    padding: 2px;
+}
+
+#perday-profit-col, #perweek-profit-col, #permonth-profit-col, #peryear-profit-col {
+    color: rgb(170, 255, 0);
+}
+
+#perday-elcost-col, #perweek-elcost-col, #permonth-elcost-col, #peryear-elcost-col {
+    color: rgb(202, 60, 60);
+}

@@ -21,6 +21,7 @@
     <link rel="stylesheet" href="css/navbar.css">
     <link rel="stylesheet" href="css/contentdiv.css">
     <link rel="stylesheet" href="css/calculator.css">
+    <link rel="stylesheet" href="css/tableresults.css">
 </head>
 
 <body>
@@ -92,12 +93,51 @@
                 </div>
             </div>
         </div>
-        <br><br><br>
+        <br><br>
         <div class="container" align="center">
             <button id="calc-btn" onclick="calculator()">Calculate</button>
         </div>
-        <div class="conatiner" align="center">
-            
+        <br>
+        <div id="result-table">
+            <br><br>
+            <div class="container" align="center">
+                <h2 id="results-label">Results</h2>
+            </div>
+                <hr id="results-line">
+            <div class="container" id="table" align="center">
+                <div class="row table-row" id="header-row">
+                    <div class="col-3 header-col" id="empty-col"></div>
+                    <div class="col-3 header-col" id="income-label-col">Income</div>
+                    <div class="col-3 header-col" id="elcost-label-col">El. costs</div>
+                    <div class="col-3 header-col" id="profit-label-col">Profit</div>
+                </div>
+                <div class="row table-row" id="perday-row">
+                    <div class="col-3 label-col">1 Day</div>
+                    <div class="col-3 value-col" id="perday-income-col">2.48€</div>
+                    <div class="col-3 value-col" id="perday-elcost-col">0.40€</div>
+                    <div class="col-3 value-col" id="perday-profit-col">2.08€</div>
+                </div>
+                <div class="row table-row" id="perweek-row">
+                    <div class="col-3 label-col">1 Week</div>
+                    <div class="col-3 value-col" id="perweek-income-col">45.80€</div>
+                    <div class="col-3 value-col" id="perweek-elcost-col">5.60€</div>
+                    <div class="col-3 value-col" id="perweek-profit-col">42.30€</div>
+                </div>
+                <div class="row table-row" id="permonth-row">
+                    <div class="col-3 label-col">1 Month</div>
+                    <div class="col-3 value-col" id="permonth-income-col">390.80€</div>
+                    <div class="col-3 value-col" id="permonth-elcost-col">32.60€</div>
+                    <div class="col-3 value-col" id="permonth-profit-col">365.30€</div>
+                </div>
+                <div class="row table-row" id="peryear-row">
+                    <div class="col-3 label-col">1 Year</div>
+                    <div class="col-3 value-col" id="peryear-income-col">3685.80€</div>
+                    <div class="col-3 value-col" id="peryear-elcost-col">105.60€</div>
+                    <div class="col-3 value-col" id="peryear-profit-col">3490.30€</div>
+                </div>
+                <br>
+                <h4 id="depreciation-label">Depreciation in </h4>
+            </div>
         </div>
         <br><br>
     </div>

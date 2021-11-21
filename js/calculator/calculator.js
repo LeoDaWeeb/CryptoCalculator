@@ -1,5 +1,5 @@
 function calculateIncomePerday(hashrate) {
-    return hashrate * 0.062
+    return hashrate * 0.063
 }
 
 function calculateElectricalCostPerday(powerConsumption, costPerKwh) {
@@ -93,5 +93,24 @@ function calculator() {
     if (errorOccured) { alert(400); return }
 
     let values = calculateProfitability(gpuPriceValue, hashrateValue, powerValue, elCostValue)
-    console.log(values)
+
+    document.getElementById('perday-income-col').textContent = values.results.perday.income.toFixed(2) + '€'
+    document.getElementById('perday-elcost-col').textContent = values.results.perday.elCosts.toFixed(2) + '€'
+    document.getElementById('perday-profit-col').textContent = values.results.perday.profit.toFixed(2) + '€'
+
+    document.getElementById('perweek-income-col').textContent = values.results.perweek.income.toFixed(2) + '€'
+    document.getElementById('perweek-elcost-col').textContent = values.results.perweek.elCosts.toFixed(2) + '€'
+    document.getElementById('perweek-profit-col').textContent = values.results.perweek.profit.toFixed(2) + '€'
+
+    document.getElementById('permonth-income-col').textContent = values.results.permonth.income.toFixed(2) + '€'
+    document.getElementById('permonth-elcost-col').textContent = values.results.permonth.elCosts.toFixed(2) + '€'
+    document.getElementById('permonth-profit-col').textContent = values.results.permonth.profit.toFixed(2) + '€'
+
+    document.getElementById('peryear-income-col').textContent = values.results.peryear.income.toFixed(2) + '€'
+    document.getElementById('peryear-elcost-col').textContent = values.results.peryear.elCosts.toFixed(2) + '€'
+    document.getElementById('peryear-profit-col').textContent = values.results.peryear.profit.toFixed(2) + '€'
+
+    document.getElementById('depreciation-label').textContent = 'Depreciation in' + values.results.depreciation.toFixed(1) + ' Months'
+
+    document.getElementById('result-table').style.display = 'block';
 }
