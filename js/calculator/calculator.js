@@ -112,5 +112,7 @@ function calculator() {
 
     document.getElementById('depreciation-label').textContent = 'Depreciation in ' + values.results.depreciation.toFixed(1) + ' Months'
 
-    document.getElementById('result-table').style.display = 'block';
+    document.getElementById('result-table').style.display = 'block'
+
+    document.getElementById('table').scrollIntoView(true)
 }
