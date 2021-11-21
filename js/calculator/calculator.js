@@ -110,7 +110,7 @@ function calculator() {
     document.getElementById('peryear-elcost-col').textContent = values.results.peryear.elCosts.toFixed(2) + '€'
     document.getElementById('peryear-profit-col').textContent = values.results.peryear.profit.toFixed(2) + '€'
 
-    document.getElementById('depreciation-label').textContent = 'Depreciation in' + values.results.depreciation.toFixed(1) + ' Months'
+    document.getElementById('depreciation-label').textContent = 'Depreciation in ' + values.results.depreciation.toFixed(1) + ' Months'
 
     document.getElementById('result-table').style.display = 'block';
 }
