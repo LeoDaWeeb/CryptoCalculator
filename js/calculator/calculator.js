@@ -114,5 +114,5 @@ function calculator() {
 
     document.getElementById('result-table').style.display = 'block'
 
-    document.getElementById('table').scrollIntoView(true)
+    document.getElementById('table').scrollIntoView(true, {behavior: 'smooth'})
 }
