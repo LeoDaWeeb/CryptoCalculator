@@ -20,12 +20,14 @@
     <link rel="stylesheet" href="css/background.css">
     <link rel="stylesheet" href="css/navbar.css">
     <link rel="stylesheet" href="css/contentdiv.css">
+    <link rel="stylesheet" href="css/scrollbar.css">
+    <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/calculator.css">
     <link rel="stylesheet" href="css/tableresults.css">
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light" id="navbar">
+    <nav class="navbar navbar-expand-lg" id="navbar">
         <a class="navbar-brand" href="#" id="navbar-title"><b>CryptoCalculator</b></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
             id="navbar-collapse-btn">
@@ -66,14 +68,16 @@
             <div class="col-sm-6" align="center">
                 <div class="form-group">
                     <label for="gpuprice" class="input-label">GPU Price (€)</label>
-                    <input type="text" class="form-control calc-input" name="gpuprice" placeholder="Enter GPU Price" autocomplete="off">
+                    <input type="text" class="form-control calc-input" name="gpuprice" placeholder="Enter GPU Price"
+                        autocomplete="off">
                 </div>
             </div>
             <br>
             <div class="col-sm-6" align="center">
                 <div class="form-group">
                     <label for="hashrate" class="input-label">Hashrate (MH/s)</label>
-                    <input type="text" class="form-control calc-input" name="hashrate" placeholder="Enter Hashrate" autocomplete="off">
+                    <input type="text" class="form-control calc-input" name="hashrate" placeholder="Enter Hashrate"
+                        autocomplete="off">
                 </div>
             </div>
         </div>
@@ -82,14 +86,16 @@
             <div class="col-sm-6" align="center">
                 <div class="form-group">
                     <label for="power" class="input-label">Power Consumption (W)</label>
-                    <input type="text" class="form-control calc-input" name="power" placeholder="Enter Power Consumption" autocomplete="off">
+                    <input type="text" class="form-control calc-input" name="power"
+                        placeholder="Enter Power Consumption" autocomplete="off">
                 </div>
             </div>
             <br>
             <div class="col-sm-6" align="center">
                 <div class="form-group">
                     <label for="elcost" class="input-label">Electrical Cost (€/kWh)</label>
-                    <input type="text" class="form-control calc-input" name="elcost" placeholder="Enter Electrical Cost" autocomplete="off" value="0.12">
+                    <input type="text" class="form-control calc-input" name="elcost" placeholder="Enter Electrical Cost"
+                        autocomplete="off" value="0.12">
                 </div>
             </div>
         </div>
@@ -104,7 +110,7 @@
             <div class="container" align="center">
                 <h2 id="results-label">Results</h2>
             </div>
-                <hr id="results-line">
+            <hr id="results-line">
             <div class="container" id="table" align="center">
                 <div class="row table-row" id="header-row">
                     <div class="col-3 header-col" id="empty-col"></div>
@@ -142,9 +148,15 @@
         </div>
         <br><br>
     </div>
-    <br><br>
+    <br><br><br>
+    <footer id="footer">
+        <div class="text-center p-3" id="footer-text">
+            <span style="color: var(--color-theme);">©</span> 2021 Copyright: <b>CryptoCalculator</b>
+        </div>
+    </footer>
 
-    <script src="js/calculator/calculator.js"></script>
+    <script src="js/calculator.js"></script>
+    <script src="js/footer.js"></script>
 </body>
 
 </html>
