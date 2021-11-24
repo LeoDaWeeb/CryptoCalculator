@@ -23,6 +23,12 @@
     -webkit-text-stroke: 0.2px var(--color-theme);
 }
 
+.nav-link-selected {
+    color: var(--color-lighter) !important;
+    text-shadow: 1px 0px 25px var(--color-theme);
+    -webkit-text-stroke: 0.2px var(--color-theme);
+}
+
 #navbar-collapse-btn {
     border-color: var(--color-lighter) !important;
     background-color:  var(--bg-color) !important;
