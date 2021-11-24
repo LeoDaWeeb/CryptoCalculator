@@ -38,6 +38,17 @@
     color: var(--font-color);
 }
 
+.label-col-inside-div {
+    width: 30%;
+    text-align: left;
+}
+
+@media only screen and (max-width: 1000px) {
+    .label-col-inside-div {
+        width: 100%;
+    }
+}
+
 #income-label-col {
     border: 1px solid var(--table-border-color);
     border-bottom: none;
