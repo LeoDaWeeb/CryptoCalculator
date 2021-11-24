@@ -14,7 +14,7 @@
 }
 
 #table {
-    --input-font-color: rgb(151, 151, 151);
+    --input-font-color: rgb(116, 116, 116);
     color: var(--input-font-color);
 }
 
