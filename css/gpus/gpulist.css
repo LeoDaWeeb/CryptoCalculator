@@ -1,10 +1,12 @@
 #gpulist {
     padding-top: 10px;
+    font-size: 0.9rem;
 }
 
 #labels-row {
     margin-top: 5px;
     color: var(--font-color);
+    font-size: 0.9rem;
 }
 
 .gpu-hr {
@@ -14,8 +16,4 @@
 
 .gpu-col {
     color: rgb(116, 116, 116);
-}
-
-.gpu-hashrate-watt {
-    text-align: right;
 }
