@@ -43,5 +43,5 @@
     --color-theme: var(--orange-color);
     --color-lighter: var(--orange-lighter);
     --font-color: var(--orange-font);
-    --github-link: var(--orange-github-link);
+    --github-link-color: var(--orange-github-link);
 }
