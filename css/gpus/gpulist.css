@@ -18,7 +18,7 @@
     color: rgb(116, 116, 116);
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 455px) {
     #hash-watt-span::before {
         content: "ㅤㅤ";
     }
