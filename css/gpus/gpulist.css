@@ -1,0 +1,17 @@
+#gpulist {
+    padding-top: 10px;
+}
+
+#labels-row {
+    margin-top: 5px;
+    color: var(--font-color);
+}
+
+.gpu-hr {
+    --hr-color: rgb(58, 58, 58);
+    background-color: var(--hr-color);
+}
+
+.gpu-col {
+    color: rgb(116, 116, 116);
+}

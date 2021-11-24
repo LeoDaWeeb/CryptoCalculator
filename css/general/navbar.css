@@ -59,4 +59,5 @@
     left: -110%;
     background-image: linear-gradient(to right, var(--colortube-bg) 0%, var(--color-theme) 70%, var(--color-theme) 100%);
     animation: colortravel 10s infinite ease-in;
+    border-radius: 10px;
 }
