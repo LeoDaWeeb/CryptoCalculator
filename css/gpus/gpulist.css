@@ -7,6 +7,7 @@
     margin-top: 5px;
     color: var(--font-color);
     font-size: 0.9rem;
+    font-weight: bold;
 }
 
 .gpu-hr {
@@ -25,4 +26,8 @@
     .gpu-hashrate-watt {
         text-align: center;
     }
+}
+
+.gpu-name {
+    font-weight: bold;
 }
