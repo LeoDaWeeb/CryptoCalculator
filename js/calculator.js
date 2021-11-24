@@ -49,10 +49,8 @@ function renderError(elementId, error) {
     document.getElementById(elementId).textContent = error
 }
 
-function deleteErrorMessages() {
-    ['gpuprice', 'hashrate', 'power', 'elcost'].forEach(elementId => {
-        document.getElementById(`${elementId}-error-text`).textContent = "ㅤ"
-    })
+function deleteErrorMessage(elementId) {
+    document.getElementById(`${elementId}-error-text`).textContent = "ㅤ"
 }
 
 function renderCalculatedValues(values) {
@@ -102,6 +100,7 @@ function calculator() {
         }
         else {
             gpuPriceValue = Number(gpuPriceValue)
+            deleteErrorMessage('gpuprice')
         }
     }
 
@@ -120,6 +119,7 @@ function calculator() {
         }
         else {
             hashrateValue = Number(hashrateValue)
+            deleteErrorMessage('hashrate')
         }
     }
 
@@ -138,6 +138,7 @@ function calculator() {
         }
         else {
             powerValue = Number(powerValue)
+            deleteErrorMessage('power')
         }
     }
 
@@ -155,16 +156,20 @@ function calculator() {
             errorOccured = true
         }
         elCostValue = Number(elCostValue)
+        deleteErrorMessage('elcost')
     }
 
     if (errorOccured) { 
         return
-    }
-    else {
-        deleteErrorMessages()
     }
 
     let values = calculateProfitability(gpuPriceValue, hashrateValue, powerValue, elCostValue)
 
     renderCalculatedValues(values)
 }
+
+document.body.addEventListener("keyup", event => {
+    if (event.keyCode === 13) {
+        document.getElementById('calc-btn').click()
+    }
+})
