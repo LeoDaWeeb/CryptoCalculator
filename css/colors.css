@@ -7,34 +7,41 @@
     --blue-color: rgb(0, 47, 255);
     --blue-lighter: rgb(185, 185, 255);
     --blue-font: rgb(0, 47, 255);
+    --blue-github-link: rgba(113, 139, 255, 0.384);
 
     /* Red color theme */
     --red-color: rgb(255, 0, 0);
     --red-lighter: rgb(255, 180, 180);
     --red-font: rgb(255, 0, 0);
+    --red-github-link: rgba(255, 0, 0, 0.384);
 
     /* Green color theme */
     --green-color: rgb(0, 255, 0);
     --green-lighter: rgb(180, 255, 180);
     --green-font: rgb(0, 255, 0);
+    --green-github-link: rgba(0, 255, 0, 0.384);
 
     /* Orange color theme */
     --orange-color: rgb(255, 153, 0);
     --orange-lighter: rgb(255, 211, 180);
     --orange-font: rgb(255, 153, 0);
+    --orange-github-link: rgba(255, 153, 0, 0.384);
 
     /* Purple color theme */
     --purple-color: rgb(255, 0, 255);
     --purple-lighter: rgb(255, 180, 255);
     --purple-font: rgb(255, 0, 255);
+    --purple-github-link: rgba(255, 0, 255, 0.384);
 
     /* Cyan color theme */
     --cyan-color: rgb(0, 255, 255);
     --cyan-lighter: rgb(180, 255, 255);
     --cyan-font: rgb(0, 255, 255);
+    --purple-github-link: rgba(0, 255, 255, 0.384);
 
     /* Current color theme */
     --color-theme: var(--orange-color);
     --color-lighter: var(--orange-lighter);
-    --font-color: var(--orange-font)
+    --font-color: var(--orange-font);
+    --github-link: var(--orange-github-link);
 }
