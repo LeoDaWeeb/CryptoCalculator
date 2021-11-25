@@ -14,4 +14,10 @@ function changeColorTheme(color) {
     localStorage.setItem('colorTheme', color)
 
     changeTabIcon(color)
+
+    try {
+        changeSelectedColor()
+    } catch (error) {
+        return
+    }
 }
