@@ -22,7 +22,8 @@
 }
 @media only screen and (max-width: 600px) {
     .color-circle {
-        
+        width: 38px;
+        height: 38px;
     }
 }
 #red-circle {
