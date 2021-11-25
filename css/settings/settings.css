@@ -9,7 +9,7 @@
 .setting-prompt {
     --setting-prompt-color: rgb(116, 116, 116);
     color: var(--setting-prompt-color);
-    padding-bottom: 10px;
+    padding-bottom: 20px;
 }
 
 .color-circle {
