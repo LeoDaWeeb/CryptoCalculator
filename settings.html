@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CryptoCalculator - Settings</title>
+    <link rel="icon" href="">
     <!-- BOOTSTRAP -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -63,12 +64,12 @@
         <hr class="settings-hr">
         <h6 class="setting-prompt">Choose a color:</h6>
         <div class="row">
-            <div class="col-1"><div id="red-circle" class="color-circle"></div></div>
-            <div class="col-1"><div id="green-circle" class="color-circle"></div></div>
-            <div class="col-1"><div id="blue-circle" class="color-circle"></div></div>
-            <div class="col-1"><div id="orange-circle" class="color-circle"></div></div>
-            <div class="col-1"><div id="purple-circle" class="color-circle"></div></div>
-            <div class="col-1"><div id="cyan-circle" class="color-circle"></div></div>
+            <div class="col-1"><div id="red-circle" class="color-circle" onclick="changeColorTheme('red')"></div></div>
+            <div class="col-1"><div id="green-circle" class="color-circle" onclick="changeColorTheme('green')"></div></div>
+            <div class="col-1"><div id="blue-circle" class="color-circle" onclick="changeColorTheme('blue')"></div></div>
+            <div class="col-1"><div id="orange-circle" class="color-circle" onclick="changeColorTheme('orange')"></div></div>
+            <div class="col-1"><div id="purple-circle" class="color-circle" onclick="changeColorTheme('purple')"></div></div>
+            <div class="col-1"><div id="cyan-circle" class="color-circle" onclick="changeColorTheme('cyan')"></div></div>
         </div>
 
 
@@ -86,8 +87,10 @@
             Made by <a id="link-to-github" href="https://github.com/LeoDaWeeb" target="_blank">@LeoDaWeeb</a>
         </div>
     </footer>
-
-    <script src="js/footer.js"></script>
+    
+    <script src="js/general/footer.js"></script>
+    <script src="js/settings/changeColorTheme.js"></script>
+    <script src="js/settings/setColorTheme.js"></script>
 </body>
 
 </html>

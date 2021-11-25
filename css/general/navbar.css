@@ -14,13 +14,13 @@
 .nav-link {
     color: var(--font-color) !important;
     border-radius: 100px;
-    transition: 500ms;
 }
 
 .nav-link:hover {
     color: var(--color-lighter) !important;
     text-shadow: 1px 0px 25px var(--color-theme);
     -webkit-text-stroke: 0.2px var(--color-theme);
+    transition: 250ms;
 }
 
 .nav-link-selected {

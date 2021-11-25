@@ -40,8 +40,8 @@
     --cyan-github-link: rgba(0, 255, 255, 0.384);
 
     /* Current color theme */
-    --color-theme: var(--purple-color);
-    --color-lighter: var(--purple-lighter);
-    --font-color: var(--purple-font);
-    --github-link-color: var(--purple-github-link);
+    --color-theme: rgb(0, 0, 0);
+    --color-lighter: rgb(0, 0, 0);
+    --font-color: rgb(0, 0, 0);
+    --github-link-color: rgb(0, 0, 0);
 }
