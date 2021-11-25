@@ -9,7 +9,7 @@
 .setting-prompt {
     --setting-prompt-color: rgb(116, 116, 116);
     color: var(--setting-prompt-color);
-    padding-bottom: 20px;
+    padding-bottom: 15px;
 }
 
 .color-circle {
@@ -21,8 +21,8 @@
 }
 @media only screen and (max-width: 600px) {
     .color-circle {
-        width: 30px;
-        height: 30px;
+        width: 35px;
+        height: 35px;
     }
 }
 #red-circle {
