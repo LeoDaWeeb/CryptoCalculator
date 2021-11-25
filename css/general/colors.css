@@ -4,9 +4,9 @@
     --element-bg-color: rgb(22, 22, 22);
 
     /* Blue color theme */
-    --blue-color: rgb(0, 47, 255);
-    --blue-lighter: rgb(226, 226, 255);
-    --blue-font: rgb(89, 120, 255);
+    --blue-color: rgb(0, 81, 255);
+    --blue-lighter: rgb(107, 188, 255);
+    --blue-font: rgb(0, 110, 255);
     --blue-github-link: rgba(113, 139, 255, 0.384);
 
     /* Red color theme */

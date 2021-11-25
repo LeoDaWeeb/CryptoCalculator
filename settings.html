@@ -32,7 +32,8 @@
                     <a class="nav-link" href="index.html"><i class="fa fa-calculator"></i><span> Calculator</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="compare.html"><i class="fa fa-balance-scale"></i></i><span> Compare</span></a>
+                    <a class="nav-link" href="compare.html"><i class="fa fa-balance-scale"></i></i><span>
+                            Compare</span></a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="convert.html"><i class="fa fa-wrench"></i><span> Convert</span></a>
@@ -44,7 +45,8 @@
                     <a class="nav-link" href="gpus.html"><i class="fa fa-server"></i><span> GPUs</span></a>
                 </li>
                 <li class="nav-item ">
-                    <a class="nav-link nav-link-selected" href="settings.html"><i class="fa fa-cog"></i><span> Settings</span></a>
+                    <a class="nav-link nav-link-selected" href="settings.html"><i class="fa fa-cog"></i><span>
+                            Settings</span></a>
                 </li>
             </ul>
         </div>
@@ -57,24 +59,48 @@
         <h2 id="subpage-title"><i class="fa fa-cog"></i><span> Settings</span></h2>
     </div>
     <br>
-    
+
     <div class="container content-div">
         <br>
-        <h4 class="setting-label">Color Theme</h4>
+        <h4 class="setting-label"><i class="fa fa-adjust"></i><span> Color Theme</span></h4>
         <hr class="settings-hr">
         <h6 class="setting-prompt">Choose a color:</h6>
         <div class="row">
-            <div class="col-1 color-cirlce-col"><div id="red-circle" class="color-circle" onclick="changeColorTheme('red')"></div></div>
-            <div class="col-1 color-cirlce-col"><div id="green-circle" class="color-circle" onclick="changeColorTheme('green')"></div></div>
-            <div class="col-1 color-cirlce-col"><div id="blue-circle" class="color-circle" onclick="changeColorTheme('blue')"></div></div>
-            <div class="col-1 color-cirlce-col"><div id="orange-circle" class="color-circle" onclick="changeColorTheme('orange')"></div></div>
-            <div class="col-1 color-cirlce-col"><div id="purple-circle" class="color-circle" onclick="changeColorTheme('purple')"></div></div>
-            <div class="col-1 color-cirlce-col"><div id="cyan-circle" class="color-circle" onclick="changeColorTheme('cyan')"></div></div>
+            <div class="col- color-cirlce-col">
+                <div id="red-circle" class="color-circle" onclick="changeColorTheme('red')"></div>
+            </div>
+            <div class="col- color-cirlce-col">
+                <div id="green-circle" class="color-circle" onclick="changeColorTheme('green')"></div>
+            </div>
+            <div class="col- color-cirlce-col">
+                <div id="blue-circle" class="color-circle" onclick="changeColorTheme('blue')"></div>
+            </div>
+            <div class="col- color-cirlce-col">
+                <div id="orange-circle" class="color-circle" onclick="changeColorTheme('orange')"></div>
+            </div>
+            <div class="col- color-cirlce-col">
+                <div id="purple-circle" class="color-circle" onclick="changeColorTheme('purple')"></div>
+            </div>
+            <div class="col- color-cirlce-col">
+                <div id="cyan-circle" class="color-circle" onclick="changeColorTheme('cyan')"></div>
+            </div>
         </div>
         <br><br><br>
-        <h4 class="setting-label">Electrical Cost</h4>
+        <h4 class="setting-label"><i class="fa fa-bolt"></i><span> Electrical Cost (€)</span></h4>
         <hr class="settings-hr">
         <h6 class="setting-prompt">The value you enter here will be autocompleted in the calculator:</h6>
+        <div class="row">
+            <div class="col-">
+                <div class="form-group">
+                    <input inputmode="numeric" type="text" class="form-control settings-input"
+                        value="0.12" autocomplete="off" disabled id="default-elcost-input">
+                    <small style="color: red; margin-left: 19px; font-size: 0.7rem;" id="default-elcost-error-text">ㅤ</small>
+                </div>
+            </div>
+            <div class="col-">
+                <button id="edit-btn" onclick="editDefaultElcost()"><i id="edit-btn-sign" class="fa fa-edit"></i></button>
+            </div>
+        </div>
     </div>
 
 
@@ -83,16 +109,17 @@
     <br><br><br>
     <footer id="footer">
         <div class="text-center p-3" id="footer-text">
-            <span style="color: var(--color-theme);"><i class="fa fa-copyright"></i><span></span></span> 2021 Copyright: <b>CryptoCalculator</b><br>
+            <span style="color: var(--color-theme);"><i class="fa fa-copyright"></i><span></span></span> 2021 Copyright:
+            <b>CryptoCalculator</b><br>
             Made by <a id="link-to-github" href="https://github.com/LeoDaWeeb" target="_blank">@LeoDaWeeb</a>
         </div>
     </footer>
-    
+
     <script src="js/general/footer.js"></script>
     <script src="js/settings/changeColorTheme.js"></script>
     <script src="js/settings/setColorTheme.js"></script>
     <script src="js/settings/selectedColorTheme.js"></script>
-    <script src="js/settings/colorCirlcesSpace.js"></script>
+    <script src="js/settings/editElectricCost.js"></script>
 </body>
 
 </html>

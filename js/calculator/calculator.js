@@ -173,3 +173,5 @@ document.body.addEventListener("keyup", event => {
         document.getElementById('calc-btn').click()
     }
 })
+
+document.getElementsByName('elcost')[0].value = localStorage.getItem('defaultElcost')
