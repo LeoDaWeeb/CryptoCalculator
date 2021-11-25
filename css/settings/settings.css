@@ -126,3 +126,14 @@
     --hover-color: rgb(88, 88, 88);
     background-color: var(--hover-color);
 }
+
+@media only screen and (max-width: 600px) {
+    .edit-btn:hover {
+        --btnsm-color: rgb(22, 22, 22);
+        background-color: var(--btnsm-color);
+    }
+    .edit-btn:active {
+		--btnsma-color: rgb(88, 88, 88);
+        background-color: var(--btnsma-color);
+    }
+}
