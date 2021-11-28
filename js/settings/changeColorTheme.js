@@ -1,6 +1,6 @@
 function changeTabIcon(color) {
     document.querySelector("link[rel*='icon']").href = `resources/icons/icon-${color}.png`;
-    document.querySelector("meta[name=theme-color]").setAttribute('content', coloro)
+    document.querySelector("meta[name=theme-color]").setAttribute('content', color)
 }
 
 function changeColorTheme(color) {

@@ -31,3 +31,26 @@
 .gpu-name {
     font-weight: bold;
 }
+
+.label-div:hover {
+    cursor: pointer;
+}
+
+.label-div:active {
+    cursor: pointer;
+}
+
+@media only screen and (min-width: 455px) {
+    .label-div:hover {
+        color: var(--color-lighter);
+    }
+    .label-div:active {
+        color: var(--font-color);
+    }
+}
+
+@media only screen and (max-width: 455px) {
+    .label-div:active {
+        color: var(--color-lighter);
+    }
+}
