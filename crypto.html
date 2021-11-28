@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Access-Control-Allow-Origin" content="*">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="theme-color" content=""/>
     <title>Cryptocalculator</title>
@@ -17,6 +18,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- CSS STYLESHEETS -->
     <link rel="stylesheet" href="css/general/master.css">
+    <link rel="stylesheet" href="css/crypto/master.css">
 </head>
 
 <body>
@@ -58,9 +60,11 @@
     </div>
     <br>
     
-
-
-
+    <div class="container content-div" id="cryptolist">
+        <div class="container" align="center" style="padding: 30px;">
+            <h2 id="error-loading-msg" style="color: var(--github-link-color);">Loading...</h2>
+        </div>
+    </div>
 
 
     <br><br><br>
@@ -71,10 +75,11 @@
         </div>
     </footer>
 
-    <script src="js/footer.js"></script>
+    <script src="js/general/footer.js"></script>
     <script src="js/settings/changeColorTheme.js"></script>
     <script src="js/settings/setColorTheme.js"></script>
     <script src="js/settings/setDefaultElectricalCost.js"></script>
+    <script src="js/crypto/cryptolist.js"></script>
 </body>
 
 </html>
